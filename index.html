@@ -6,29 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortafolio</title>
     <link rel="stylesheet" href="css/skill.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <header>
-
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="skill.html">Skill</a></li>
+    <header id="header">
+        <!--<a href="#" class="logo">Sr IVAN</a>-->
+        <div class="toggle"></div>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="skill.html">Skills</a></li>
             <li><a href="#">Working</a></li>
             <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-
+        </ul>    
+    </header>
+    
     <footer>
 
         <p>Copyrigth &copy 2021 Todos los derechos reservados</p>
 
     </footer>
+    <script>
+        const toggleMenu = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        toggleMenu.onclick = function(){
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
     

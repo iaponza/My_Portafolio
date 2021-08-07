@@ -1,0 +1,103 @@
+@import url('https://font.googleapis.com/css?family=Poppins:300,400,500,600,700,800display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(#0B5345, #16A085, #e6eded);
+    min-height: 100vh;
+}
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+/**
+#header .logo{
+    color: #000;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}*/
+
+#header .navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .navigation li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+#header .navigation li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px; 
+}
+
+#header .navigation li a:hover,
+#header .navigation li a:hover{
+    background: #fff;
+    color: #111;
+}
+
+@media (max-width: 992px)
+{
+    #header .navigation
+    {
+        display: none;
+    }
+    #header .navigation .active
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background: #0B5345;
+    }
+    #header .navigation li{
+        margin-left: 0;
+    }
+    #header .navigation li a{
+        font-size: 1.5em;
+        margin: 5px 0;
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .toggle
+    {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1000;
+    }
+    .toggle.active{
+        background: url(cancel.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
