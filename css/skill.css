@@ -23,7 +23,14 @@ body {
 
 .container h2 {
     color: #fff;
+    text-align: center;
 }
+
+.container p {
+    color: #fff;
+    text-align: center;
+}
+
 
 .container .skills {
     position: relative;
@@ -44,7 +51,7 @@ body {
 .container .skills:hover {
     opacity: 1;
     transform: scale(1.1);
-    
+
 }
 
 .container .skills:before {
