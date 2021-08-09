@@ -9,6 +9,19 @@
     
 </head>
 <body>
+
+    <header id="header">
+        <!--<a href="#" class="logo">Sr IVAN</a>-->
+        <div class="toggle"></div>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="#">Working</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>    
+    </header>
+
     <div class="container">
         <h2>Skill</h2>
         <p>acquire skills</p>
@@ -41,5 +54,14 @@
             <span class="Value">70%</span>
         </div>
     </div>
+
+    <script>
+        const toggleMenu = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        toggleMenu.onclick = function(){
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

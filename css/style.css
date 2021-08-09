@@ -10,6 +10,7 @@ body{
     background: linear-gradient(#0B5345, #16A085, #e6eded);
     min-height: 100vh;
 }
+
 #header{
     position: absolute;
     top: 0;
